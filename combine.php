@@ -10,24 +10,18 @@
     <?php
         $value = 'World';
 
-        //文字列演算子による値と変数の連結
         $combined1 = 'Hello' . $value . '!';
 
-        // 変数の展開。ダブルクオート内で使用可能。
         $combined2 = "Hello {$value} !";
 
-        // 代入演算子と文字列演算子の組み合わせ
         $combined3 = 'Hello';
         $combined3 .= $value;
         $combined3 .= '!';
 
-        // シングルクォート内では変数は展開されない
-        $combined4 = 'Hello {$value} !';
 
     ?>
     <p><?=$combined1?></p>
     <p><?=$combined2?></p>
     <p><?=$combined3?></p>
-    <p><?=$combined4?></p>
 </body>
 </html>
